@@ -87,271 +87,21 @@
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section class="cta section center-content-mobile reveal-from-bottom">
-                    <div class="container">
-                        <div class="cta-inner section-inner cta-split">
-                            <div class="cta-slogan">
-                                <h3 class="m-0">
-                                    Pick a room name.<br />
-                                    How about this one?
-                                </h3>
-                            </div>
-                            <div class="cta-action">
-                                <div class="mb-24">
-                                    <label class="form-label screen-reader" for="roomName">mirotalk</label>
-                                    <div class="form-group-desktop">
-                                        <input class="form-input" type="text" id="roomName" value="mirotalk" />
-                                        <button
-                                            id="joinRoomButton"
-                                            class="button button-primary pulse"
-                                            onclick="joinRoom()"
-                                        >
-                                            Join Room
-                                        </button>
-                                        <script>
-                                            document.getElementById('roomName').onkeyup = (e) => {
-                                                if (e.keyCode === 13) {
-                                                    e.preventDefault();
-                                                    joinRoom();
-                                                }
-                                            };
-                                            function joinRoom() {
-                                                let roomName = document.getElementById('roomName').value;
-                                                window.location.href = '/join/' + roomName;
-                                            }
-                                        </script>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </section>                
 
                 <section class="clients section">
                     <div class="container">
-                        <div class="clients-inner section-inner has-top-divider has-bottom-divider">
-                            <h2 style="text-align: center">Our sponsors</h2>
-                            <ul class="list-reset">
-                                <li class="reveal-from-top">
-                                    <a href="https://broadcastx.de/" target="_blank"
-                                        ><img src="../sponsors/BroadcastX.png" alt="BroadcastX"
-                                    /></a>
-                                </li>
-                                <li class="reveal-from-top">
-                                    <a href="https://www.hetzner.com" target="_blank"
-                                        ><img src="../sponsors/Hetzner.png" alt="Hetzner"
-                                    /></a>
-                                </li>
-                            </ul>
+                        <div class="clients-inner section-inner has-top-divider has-bottom-divider">                            
                         </div>
                     </div>
-                </section>
-
-                <section class="features-tiles section center-content">
-                    <div class="container">
-                        <div class="features-tiles-inner section-inner has-top-divider">
-                            <div class="section-header">
-                                <div class="container-xs reveal-from-bottom" data-reveal-delay="650">
-                                    <h2 class="mt-0 mb-16">
-                                        Unlimited number of conference rooms without call time limitation
-                                    </h2>
-                                    <p class="m-0">
-                                        MiroTalk is built radically differently. We left behind slow bulky servers,
-                                        opting for peer-to-peer calling. We engineered a platform with maximum video
-                                        quality lowest latency that makes your calls crystal clear.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="tiles-wrap">
-                                <div class="tiles-item reveal-from-right">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-02.svg"
-                                                    alt="Screen Sharing"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">Screen Sharing</h4>
-                                            <p class="m-0 text-sm">
-                                                Share your screen, application window, present your documents, slides
-                                                and more. Up to 4k resolution and speed up to 60fps.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tiles-item reveal-from-left">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-04.svg"
-                                                    alt="WebCam Streaming"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">WebCam Streaming</h4>
-                                            <p class="m-0 text-sm">
-                                                Having the webcam on, allows participants to make a deeper connection
-                                                with you. Up to 4k resolution and speed up to 60fps.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tiles-item reveal-from-right">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-01.svg"
-                                                    alt="Chat Room"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">Chat Room</h4>
-                                            <p class="m-0 text-sm">
-                                                Chat with others in the meeting, either public chat or private, save the
-                                                meeting messages. An integrated emoji picker to show your feeling.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tiles-item reveal-from-left">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-03.svg"
-                                                    alt="Meeting Recording"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">Meeting Recording</h4>
-                                            <p class="m-0 text-sm">
-                                                Record your Screen, WebCam and Audio. Save it for use in the future or
-                                                to share with others.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tiles-item reveal-from-right">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-06.svg"
-                                                    alt="Interactive Whiteboard"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">Interactive Whiteboard</h4>
-                                            <p class="m-0 text-sm">
-                                                Advanced collaborative whiteboard to draw and explain your concepts to
-                                                the other participants in the meeting.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tiles-item reveal-from-left">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-02.svg"
-                                                    alt="File Sharing"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">File Sharing</h4>
-                                            <p class="m-0 text-sm">
-                                                Share any types of files to all participants in the meeting, in total
-                                                security, thanks to Datagram Transport Layer Security (DTLS).
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tiles-item reveal-from-right">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-05.svg"
-                                                    alt="Total Privacy"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">Total Privacy</h4>
-                                            <p class="m-0 text-sm">
-                                                Data stays between you and your participants. MiroTalk doesn't collect
-                                                or share personal information. It's built for privacy first.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tiles-item reveal-from-left">
-                                    <div class="tiles-item-inner">
-                                        <div class="features-tiles-item-header">
-                                            <div class="features-tiles-item-image mb-16">
-                                                <img
-                                                    src="../images/feature-tile-icon-05.svg"
-                                                    alt="Maximum Security"
-                                                    width="72"
-                                                    height="72"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="features-tiles-item-content">
-                                            <h4 class="mt-0 mb-8">Maximum Security</h4>
-                                            <p class="m-0 text-sm">
-                                                End-to-end state-of-the-art encryption means your participants are
-                                                exactly that. Your calls.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </section>                
 
                 <section class="team section center-content">
                     <div class="container">
                         <div class="team-inner section-inner has-top-divider">
                             <div class="section-header center-content reveal-from-bottom">
                                 <div class="container-xs">
-                                    <h2 class="mt-0 mb-16">Supported Browsers</h2>
+                                    <h2 class="mt-0 mb-16">Navegadores Suportados</h2>
                                 </div>
                             </div>
                             <div class="tiles-wrap">
@@ -369,7 +119,7 @@
                                         </div>
                                         <div class="team-item-content">
                                             <h5 class="team-item-name mt-0 mb-4">
-                                                Chrome, Edge, Firefox, Opera, Safari, Brave and more.
+                                                Chrome, Edge, Firefox, Opera, Safari, Brave entre outros.
                                             </h5>
                                         </div>
                                     </div>
@@ -377,48 +127,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section class="team section center-content">
-                    <div class="container">
-                        <div class="team-inner section-inner has-top-divider">
-                            <div class="section-header center-content reveal-from-bottom">
-                                <div class="container-xs">
-                                    <h2 class="mt-0 mb-16">Meet the team</h2>
-                                </div>
-                            </div>
-
-                            <div class="tiles-wrap">
-                                <!-- Author -->
-                                <div class="tiles-item reveal-from-bottom">
-                                    <div class="tiles-item-inner">
-                                        <div class="team-item-header">
-                                            <div class="team-item-image mb-24">
-                                                <img
-                                                    src="../images/miroslav-pejic.png"
-                                                    alt="Team member author"
-                                                    width="180"
-                                                    height="180"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="team-item-content">
-                                            <a
-                                                target="_blank"
-                                                href="https://www.linkedin.com/in/miroslav-pejic-976a07101/"
-                                            >
-                                                <h5 class="team-item-name mt-0 mb-4">Miroslav Pejic</h5>
-                                            </a>
-                                            <div class="team-item-role text-xxs fw-500 tt-u text-color-primary mb-8">
-                                                Full Stack Developer
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </section>                
 
                 <section class="section">
                     <div class="container">
@@ -434,8 +143,8 @@
                                             border: 0;
                                             background: linear-gradient(100deg, #376df9 0, #ff5fa0 75%, #ffc55a 100%);
                                         "
-                                        href="/newcall"
-                                        >Try now</a
+                                        href="/privacy"
+                                        >Entrar agora</a
                                     >
                                 </div>
                             </div>
